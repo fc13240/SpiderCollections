@@ -175,6 +175,7 @@ class VirtualPhone(object):
 
 if __name__ == '__main__':
     urllib3.disable_warnings()
+    # 增加重试连接次数
     requests.adapters.DEFAULT_RETRIES = 5
 
     s = requests.session()
